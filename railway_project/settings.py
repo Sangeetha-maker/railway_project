@@ -45,7 +45,10 @@ INSTALLED_APPS = [
     # Default Django Apps
     'django.contrib.admin',
     'django.contrib.auth',
-    # ... etc
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
 ]
 
 MIDDLEWARE = [
