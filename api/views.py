@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from rest_framework import generics
+from .models import Train
+from .serializers import TrainSerializer
 
-# Create your views here.
+class TrainList(generics.ListAPIView):
+    queryset = Train.objects.all()
+    serializer_class = TrainSerializer
